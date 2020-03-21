@@ -7,7 +7,7 @@ function App() {
       <header className="Sobre-header">
         <a
           className="Sobre-link"
-          href="/"
+          href="#to-do"
           target="_blank"
           rel="noopener noreferrer"
         >

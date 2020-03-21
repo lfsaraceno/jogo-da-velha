@@ -1,3 +1,6 @@
+html {
+  font-size: var(--size-base);
+}
 .Sobre {
   width: 360px;
   height: 640px;
@@ -15,12 +18,13 @@
 }
 
 .Sobre-link {
-  width: 50px;
+  width: 55px;
   height: 17px;
-  font: bold 14px "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: var(--size-small);
   text-decoration: none;
   text-transform: uppercase;
-  color: #707070;
+  color: var(--color-fourth);
   letter-spacing: 0.05em;
   position: relative;
 }
