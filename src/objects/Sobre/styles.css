@@ -1,0 +1,8 @@
+.link-sobre {
+  font-weight: bold;
+  font-size: var(--size-small);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-fourth);
+  letter-spacing: 0.05em;
+}

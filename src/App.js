@@ -1,21 +1,8 @@
 import React from "react";
-import "./App.css";
+import Sobre from "./objects/Sobre";
 
 function App() {
-  return (
-    <div className="Sobre">
-      <header className="Sobre-header">
-        <a
-          className="Sobre-link"
-          href="#to-do"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sobre
-        </a>
-      </header>
-    </div>
-  );
+  return <Sobre />;
 }
 
 export default App;
