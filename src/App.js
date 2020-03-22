@@ -1,8 +1,12 @@
 import React from "react";
-import Sobre from "./objects/Sobre";
+import Header from "./components/Header";
 
 function App() {
-  return <Sobre />;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 
 export default App;

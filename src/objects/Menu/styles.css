@@ -1,0 +1,17 @@
+.menu {
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-fourth);
+}
+
+.menu::before {
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-first);
+}
+
+.menu::after {
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-first);
+}
