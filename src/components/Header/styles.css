@@ -4,10 +4,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--color-second);
   padding: 20px 35px;
   box-sizing: border-box;
   margin: auto;
+}
+
+.header > .logo {
+  margin-right: 10px;
 }
 
 .header > .sobre {

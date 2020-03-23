@@ -1,0 +1,36 @@
+.board {
+  max-width: 360px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: var(--color-second);
+}
+
+.game-board {
+  width: 300px;
+  height: 300px;
+}
+
+.game-board > .cards {
+  margin: 3px;
+}
+
+.game-board > .cards:nth-child(2),
+.game-board > .cards:nth-child(4),
+.game-board > .cards:nth-child(6),
+.game-board > .cards:nth-child(8) {
+  background-image: url(../../img/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game-board > .cards:nth-child(3),
+.game-board > .cards:nth-child(5),
+.game-board > .cards:nth-child(7),
+.game-board > .cards:nth-child(9) {
+  background-image: url(../../img/x.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
