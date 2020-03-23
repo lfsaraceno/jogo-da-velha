@@ -1,0 +1,16 @@
+.footer {
+  max-width: 360px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: var(--color-second);
+}
+
+.copy {
+  margin: 0 2px;
+}
+.footer > .logo {
+  height: 10px;
+}
