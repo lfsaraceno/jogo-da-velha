@@ -3,7 +3,7 @@ import "./styles.css";
 
 const Sobre = () => {
   return (
-    <a className="link-sobre" href="#to-do">
+    <a className="sobre" href="#to-do">
       Sobre
     </a>
   );
