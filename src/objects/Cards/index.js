@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.css";
 
-const Cards = () => {
-  return <div className="cards -active"></div>;
+const Cards = ({ children }) => {
+  return <button className="cards -active">{children}</button>;
 };
 
 export default Cards;
