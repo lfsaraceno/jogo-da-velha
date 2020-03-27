@@ -47,32 +47,17 @@
 }
 
 .check > .input {
-  all: unset;
   display: inline-block;
   width: 22px;
   height: 22px;
-  background: none;
-  border: 1px solid var(--color-zero);
-  border-radius: 5px;
-  margin: 3px 0;
-  box-shadow: -1px -1px 3px #ffffff, 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 .check > .input:checked {
   width: 22px;
   height: 22px;
-  border: 1px solid var(--color-zero);
-  background: url(../../img/check-green.svg) no-repeat center;
-  border-radius: 5px;
-  box-shadow: -1px -1px 3px #ffffff, 1px 1px 3px rgba(0, 0, 0, 0.3),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.1),
-    inset -2px -2px 3px rgba(255, 255, 255, 0.6);
 }
 
-.check > .label-event {
+.check > .label {
   height: 30px;
   line-height: 30px;
-  font-size: var(--size-small);
-  font-weight: bold;
   margin-left: 10px;
-  color: var(--color-fourth);
 }

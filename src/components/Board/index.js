@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import Cards from "../../objects/Cards";
 import Player from "../../objects/Players";
-import GameEvent from "../GameEvent";
+import ShowEvent from "../ShowEvent";
 
 const Bord = () => {
   return (
@@ -38,7 +38,7 @@ const Bord = () => {
           <Player player="" />
         </Cards>
       </div>
-      <GameEvent />
+      <ShowEvent id="show" type="checkbox" content="Mostrar Eventos" />
     </section>
   );
 };
