@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import Cards from "../../objects/Cards";
 import Player from "../../objects/Players";
+import GameEvent from "../GameEvent";
 
 const Bord = () => {
   return (
@@ -37,6 +38,7 @@ const Bord = () => {
           <Player player="" />
         </Cards>
       </div>
+      <GameEvent />
     </section>
   );
 };

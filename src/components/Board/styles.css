@@ -2,8 +2,8 @@
   max-width: 360px;
   height: 600px;
   display: flex;
+  position: relative;
   justify-content: center;
-  align-items: center;
   margin: auto;
   background-color: var(--color-second);
 }
@@ -14,6 +14,7 @@
   display: grid;
   grid-template-columns: 33.333% 33.333% 33.333%;
   grid-template-rows: 33.333% 33.333% 33.333%;
+  margin: 30px 0;
 }
 
 .game-board > .cards {
@@ -34,6 +35,44 @@
 .game-board > .cards:nth-child(3),
 .game-board > .cards:nth-child(5),
 .game-board > .cards:nth-child(7) {
-  background-color: var(--color-nineth);
-  box-shadow: -1px -1px 4px #ffffff, 1px 1px 3px rgba(0, 0, 0, 0.5);
+  border: 3px solid var(--color-nineth);
+}
+
+.check {
+  width: 160px;
+  height: 30px;
+  display: inherit;
+  position: absolute;
+  bottom: 190px;
+}
+
+.check > .input {
+  all: unset;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: none;
+  border: 1px solid var(--color-zero);
+  border-radius: 5px;
+  margin: 3px 0;
+  box-shadow: -1px -1px 3px #ffffff, 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.check > .input:checked {
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--color-zero);
+  background: url(../../img/check-green.svg) no-repeat center;
+  border-radius: 5px;
+  box-shadow: -1px -1px 3px #ffffff, 1px 1px 3px rgba(0, 0, 0, 0.3),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6);
+}
+
+.check > .label-event {
+  height: 30px;
+  line-height: 30px;
+  font-size: var(--size-small);
+  font-weight: bold;
+  margin-left: 10px;
+  color: var(--color-fourth);
 }
