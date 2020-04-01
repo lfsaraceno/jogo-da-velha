@@ -1,0 +1,9 @@
+.social {
+  width: 80%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  background-color: var(--color-tird);
+}

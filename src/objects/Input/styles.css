@@ -1,15 +1,19 @@
 .input {
   all: unset;
+  display: inline-block;
   background: none;
   border: 1px solid var(--color-zero);
   border-radius: 5px;
+  box-sizing: border-box;
   margin: 3px 0;
   box-shadow: -1px -1px 3px #ffffff, 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 .input:checked {
+  display: inline-block;
   border: 1px solid var(--color-zero);
   background: url(../../img/check-green.svg) no-repeat center;
   border-radius: 5px;
+  box-sizing: border-box;
   box-shadow: -1px -1px 3px #ffffff, 1px 1px 3px rgba(0, 0, 0, 0.3),
     inset 2px 2px 3px rgba(0, 0, 0, 0.1),
     inset -2px -2px 3px rgba(255, 255, 255, 0.6);
