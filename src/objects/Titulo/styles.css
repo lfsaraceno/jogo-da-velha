@@ -1,0 +1,4 @@
+.titulo {
+  font-size: var(--size-large);
+  color: var(--color-zero);
+}

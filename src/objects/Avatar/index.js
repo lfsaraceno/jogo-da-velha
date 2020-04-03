@@ -1,10 +1,11 @@
 import React from "react";
-import AvatarIcon from "../../img/avatar.svg";
+import AvatarIcon from "../../img/mulher.png";
+import "./styles.css";
 
 const Avatar = () => {
   return (
-    <div>
-      <img src={AvatarIcon} alt="Avatar" />
+    <div className="avatar-border">
+      <img className="avatar" src={AvatarIcon} alt="Avatar" />
     </div>
   );
 };

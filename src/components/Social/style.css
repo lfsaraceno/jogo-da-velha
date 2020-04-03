@@ -7,3 +7,21 @@
   margin: auto;
   background-color: var(--color-tird);
 }
+
+/* .social > a {
+  width: 37px;
+  height: 37px;
+  border: 2px solid Var(--color-zero);
+  border-radius: 10px;
+} */
+
+.social > a > img {
+  width: 40px;
+  height: 40px;
+  border: 3px solid Var(--color-fifth);
+  border-radius: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.2),
+    2px 2px 3px rgba(0, 0, 0, 0.3);
+}

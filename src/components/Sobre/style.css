@@ -1,5 +1,37 @@
 .sobre {
   width: 360px;
   height: 640px;
-  background-color: var(--color-negative);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--color-third);
+  padding-top: 20px;
+}
+.sobre > .header-sobre {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sobre > .header-sobre > .logo {
+}
+.sobre > .header-sobre > .menu-sobre {
+  color: var(--color-zero);
+  margin-right: -60px;
+}
+
+.sobre > .descricao {
+  width: 290px;
+  height: 70px;
+  line-height: var(--size-medium);
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.sobre > .footer {
+  margin: 0;
+  color: var(--color-zero);
+  background: none;
 }
