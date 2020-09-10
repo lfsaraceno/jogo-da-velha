@@ -3,7 +3,7 @@ import GitIcon from "../../img/git.svg";
 
 const Git = () => {
   return (
-    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
       <img src={GitIcon} alt=" Icone Twitter" />
     </a>
   );

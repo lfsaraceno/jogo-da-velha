@@ -1,14 +1,15 @@
 import React from "react";
 import "./styles.css";
 import Logo from "../../objects/Logo";
-import Sobre from "../../objects/Sobre";
+import MenuSobre from "../../objects/MenuSobre";
 import Menu from "../../objects/Menu";
+
 
 const Header = () => {
   return (
     <header className="header">
-      <Logo />
-      <Sobre />
+      <Logo/>
+      <MenuSobre/>
       <Menu />
     </header>
   );

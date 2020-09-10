@@ -13,7 +13,7 @@ const Player = ({ player }) => {
     <img
       className="player"
       src={players[player]}
-      alt={`Jogador${players[player]}`}
+      alt={`Jogador${player.toUpperCase()}`}
     />
   );
 };

@@ -21,17 +21,6 @@
   margin: 3px;
 }
 
-.game-board > .cards:nth-child(2),
-.game-board > .cards:nth-child(3),
-.game-board > .cards:nth-child(4),
-.game-board > .cards:nth-child(5),
-.game-board > .cards:nth-child(6),
-.game-board > .cards:nth-child(8),
-.game-board > .cards:nth-child(7) {
-  box-shadow: -1px -1px 3px #ffffff, 1px 1px 3px rgba(0, 0, 0, 0.5),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.2), inset -2px -2px 3px #ffffff;
-}
-
 .game-board > .cards:nth-child(3),
 .game-board > .cards:nth-child(5),
 .game-board > .cards:nth-child(7) {

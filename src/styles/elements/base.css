@@ -1,7 +1,7 @@
 html {
   font-size: var(--size-base);
 }
-body {
+body {  
   font-family: "Montserrat", sans-serif;
   background: var(--color-zero);
 }

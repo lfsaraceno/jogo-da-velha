@@ -1,6 +1,10 @@
 .sobre {
-  width: 360px;
-  height: 640px;
+  width: 100vw;
+  height: 100vh;
+  min-width: 360px;
+  max-width: 460px;
+  min-height: 460px;
+  max-height: 860px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,6 +12,7 @@
   flex-wrap: wrap;
   background-color: var(--color-third);
   padding-top: 20px;
+  overflow: hidden;
 }
 .sobre > .header-sobre {
   width: 100%;

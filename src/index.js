@@ -4,7 +4,7 @@ import "../src/styles/generic/reset.css";
 import "../src/styles/settings/size.css";
 import "../src/styles/settings/color.css";
 import "../src/styles/elements/base.css";
-// import App from "./App";
-import Sobre from "./components/Sobre";
+import App from "./App";
+//import Sobre from "./components/Sobre";
 
-ReactDOM.render(<Sobre />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
