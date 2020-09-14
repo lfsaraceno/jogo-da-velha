@@ -2,11 +2,11 @@ import React from "react";
 import "./styles.css";
 import Logo from "../../objects/Logo";
 
-const Footer = ({ content }) => {
+const Footer = ({ logo }) => {
   return (
     <section className="footer">
       <span className="copy">©</span>
-      <Logo content={content} />
+      <Logo logo={logo} />
     </section>
   );
 };

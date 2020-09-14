@@ -15,7 +15,7 @@ const Sobre = () => {
   return (
     <section className="sobre">
       <section className="header-sobre">
-        <Logo content={ImageLogo} />
+        <Logo logo={ImageLogo} />
         <MenuSobre />
         <Close />
       </section>
@@ -23,7 +23,7 @@ const Sobre = () => {
       <Titulo />
       <Descricao />
       <Social />
-      <Footer content={ImageLogo} />
+      <Footer logo={ImageLogo} />
     </section>
   );
 };

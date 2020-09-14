@@ -24,7 +24,7 @@
 .game-board > .cards:nth-child(3),
 .game-board > .cards:nth-child(5),
 .game-board > .cards:nth-child(7) {
-  border: 3px solid var(--color-nineth);
+  border: 3px solid var(--color-first);
 }
 
 .check {
