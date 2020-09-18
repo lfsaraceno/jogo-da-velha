@@ -9,7 +9,13 @@
   background-color: var(--color-third);
   padding-top: 20px;
   overflow: hidden;
-  opacity: 0.9;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 300ms linear, opacity 300ms linear;
+}
+.sobre.-active {
+  transform: translateX(0%);
+  opacity: 1;
 }
 .sobre > .header-sobre {
   width: 100%;
@@ -17,7 +23,7 @@
   justify-content: space-around;
   align-items: center;
 }
-.sobre > .header-sobre > .logo {
+.sobre .logo {
   position: relative;
   top: -6px;
   left: 16px;
@@ -29,7 +35,7 @@
   left: 2px;
 }
 
-.sobre > .header-sobre > .menu-sobre + .close {
+.sobre .close {
   position: relative;
   top: -6px;
   left: -18px;
