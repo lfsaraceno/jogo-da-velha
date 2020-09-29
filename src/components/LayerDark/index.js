@@ -5,26 +5,26 @@ import ImageLogo from "../../img/logo-sobre.svg";
 import Logo from "../../objects/Logo";
 import MenuSobre from "../../objects/MenuSobre";
 import Close from "../../objects/Close";
-import Avatar from "../../objects/Avatar";
+import AvatarPersona from "../../objects/AvatarPersona";
 import Titulo from "../../objects/Titulo";
 import Descricao from "../../objects/Descricao";
-import Social from "../Social";
+import SocialMedia from "../SocialMedia";
 import Footer from "../Footer";
 
-const Sobre = () => {
+const LayerDark = ({ className = "", onClick }) => {
   return (
-    <section className="sobre">
+    <section className={`layer-dark ${className}`}>
       <section className="header-sobre">
         <Logo logo={ImageLogo} />
-        <MenuSobre />
-        <Close />
+        <MenuSobre content="Voltar" onClick={onClick} />
+        <Close onClick={onClick} />
       </section>
-      <Avatar />
+      <AvatarPersona />
       <Titulo />
       <Descricao />
-      <Social />
+      <SocialMedia />
       <Footer logo={ImageLogo} />
     </section>
   );
 };
-export default Sobre;
+export default LayerDark;

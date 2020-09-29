@@ -4,14 +4,14 @@ import Cards from "../../objects/Cards";
 import Player from "../../objects/Players";
 import ShowEvent from "../ShowEvent";
 
-const Bord = () => {
+const Bord = ({ onClick, className }) => {
   return (
     <section className="board">
       <div className="game-board">
-        <Cards>
+        <Cards onClick={onClick} className={className}>
           <Player player="" />
         </Cards>
-        <Cards>
+        <Cards onClick={onClick} className={className}>
           <Player player="x" />
         </Cards>
         <Cards>

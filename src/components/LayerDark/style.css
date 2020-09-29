@@ -1,4 +1,4 @@
-.sobre {
+.layer-dark {
   width: 330px;
   height: 650px;
   display: flex;
@@ -11,37 +11,39 @@
   overflow: hidden;
   transform: translateX(100%);
   opacity: 0;
-  transition: transform 300ms linear, opacity 300ms linear;
+  scale: 0;
+  transition: transform 300ms linear, opacity 300ms linear, scale 300ms linear;
 }
-.sobre.-active {
+.layer-dark.-active {
   transform: translateX(0%);
+  scale: 1;
   opacity: 1;
 }
-.sobre > .header-sobre {
+.layer-dark > .header-sobre {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
 }
-.sobre .logo {
+.layer-dark .logo {
   position: relative;
-  top: -6px;
-  left: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.sobre > .header-sobre > .menu-sobre {
+.layer-dark > .header-sobre > .menu-sobre {
   color: var(--color-zero);
   position: relative;
-  top: -7px;
-  left: 2px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.sobre .close {
+.layer-dark .close {
   position: relative;
-  top: -6px;
-  left: -18px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.sobre > .descricao {
+.layer-dark > .descricao {
   width: 290px;
   height: 70px;
   line-height: var(--size-medium);
@@ -49,7 +51,8 @@
   text-align: center;
 }
 
-.sobre > .footer {
+.layer-dark > .footer {
+  display: block;
   margin: 0;
   color: var(--color-zero);
   background: none;

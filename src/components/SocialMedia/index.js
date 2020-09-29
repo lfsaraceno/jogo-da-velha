@@ -9,7 +9,7 @@ import Instagram from "../../objects/Instagram";
 
 const Social = () => {
   return (
-    <section className="social">
+    <section className="social-media">
       <Git />
       <Linkdein />
       <Facebook />

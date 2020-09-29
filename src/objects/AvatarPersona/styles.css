@@ -1,0 +1,14 @@
+.avatar-persona-border {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  margin: auto;
+  border: 3px solid var(--color-zero);
+}
+
+.avatar-persona {
+  width: 98px;
+  height: 98px;
+  margin: auto;
+}

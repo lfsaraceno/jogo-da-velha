@@ -4,12 +4,12 @@ import Logo from "../../objects/Logo";
 import MenuSobre from "../../objects/MenuSobre";
 import Menu from "../../objects/Menu";
 
-const Header = ({ logo }) => {
+const Header = ({ logo, onClick }) => {
   return (
     <header className="header">
       <Logo logo={logo} />
-      <MenuSobre />
-      <Menu />
+      <MenuSobre onClick={onClick} />
+      <Menu onClick={onClick} />
     </header>
   );
 };

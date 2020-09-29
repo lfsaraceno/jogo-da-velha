@@ -1,15 +1,19 @@
 import React from "react";
 import "./styles.css";
 
+const Cards = ({ children, onClick, className }) => {
+  let active = "";
+  console.log(`onclick: ${onClick}`);
+  console.log(`className: ${className}`);
+  // if (children.props.player === "x" || children.props.player === "o") {
+  //   active = " -active";
+  // }
 
-const Cards = ({ children }) => {
-  let active = ""
-
-  if (children.props.player === "x" || children.props.player === "o") {
-    active = " -active"
-  }
-  
-  return <button className={`cards${active}`}>{children}</button>;
+  return (
+    <button onClick={onClick} className={`cards${className}`}>
+      {children}
+    </button>
+  );
 };
 
 export default Cards;
