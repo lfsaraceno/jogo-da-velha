@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 
 const Cards = ({ children, onClick, className }) => {
-  let active = "";
+  // let active = "";
   console.log(`onclick: ${onClick}`);
   console.log(`className: ${className}`);
   // if (children.props.player === "x" || children.props.player === "o") {
