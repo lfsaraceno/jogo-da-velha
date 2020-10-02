@@ -1,0 +1,6 @@
+.tag-game {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--color-zero);
+  padding: var(--size-very-small) var(--size-medium);
+}

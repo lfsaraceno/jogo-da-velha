@@ -2,9 +2,15 @@ import React from "react";
 import "./styles.css";
 import Cards from "../../objects/Cards";
 import Player from "../../objects/Players";
+import HistoryGame from "../../objects/HistoryGame";
 import ShowEvent from "../ShowEvent";
 
-const Bord = ({ onClick, className }) => {
+const Board = ({
+  onClick,
+  className,
+  classHistoryGame,
+  onClickHistoryGame,
+}) => {
   return (
     <section className="board">
       <div className="game-board">
@@ -14,33 +20,39 @@ const Bord = ({ onClick, className }) => {
         <Cards onClick={onClick} className={className}>
           <Player player="x" />
         </Cards>
-        <Cards>
+        <Cards onClick={onClick} className={className}>
           <Player player="x" />
         </Cards>
 
-        <Cards>
+        <Cards onClick={onClick} className={className}>
           <Player player="o" />
         </Cards>
-        <Cards>
+        <Cards onClick={onClick} className={className}>
           <Player player="x" />
         </Cards>
-        <Cards>
+        <Cards onClick={onClick} className={className}>
           <Player player="o" />
         </Cards>
 
-        <Cards>
+        <Cards onClick={onClick} className={className}>
           <Player player="x" />
         </Cards>
-        <Cards>
+        <Cards onClick={onClick} className={className}>
           <Player player="o" />
         </Cards>
-        <Cards>
+        <Cards onClick={onClick} className={className}>
           <Player player="" />
         </Cards>
       </div>
-      <ShowEvent id="show" type="checkbox" content="Mostrar Eventos" />
+      <ShowEvent
+        onClick={onClickHistoryGame}
+        id="show"
+        type="checkbox"
+        content="Mostrar Eventos"
+      />
+      <HistoryGame className={classHistoryGame} />
     </section>
   );
 };
 
-export default Bord;
+export default Board;

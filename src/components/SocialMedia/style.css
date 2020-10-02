@@ -8,13 +8,6 @@
   background-color: var(--color-tird);
 }
 
-/* .social-media > a {
-  width: 37px;
-  height: 37px;
-  border: 2px solid Var(--color-zero);
-  border-radius: 10px;
-} */
-
 .social-media > a > img {
   width: 40px;
   height: 40px;

@@ -9,14 +9,12 @@
   background-color: var(--color-third);
   padding-top: 20px;
   overflow: hidden;
-  transform: translateX(100%);
+  transform: translateX(100%) scale(0);
   opacity: 0;
-  scale: 0;
   transition: transform 300ms linear, opacity 300ms linear, scale 300ms linear;
 }
 .layer-dark.-active {
-  transform: translateX(0%);
-  scale: 1;
+  transform: translateX(0%) scale(1);
   opacity: 1;
 }
 .layer-dark > .header-sobre {
@@ -52,8 +50,10 @@
 }
 
 .layer-dark > .footer {
+  width: 100%;
   display: block;
-  margin: 0;
   color: var(--color-zero);
   background: none;
+  line-height: 20px;
+  text-align: center;
 }

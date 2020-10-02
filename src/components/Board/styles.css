@@ -33,6 +33,7 @@
   display: inherit;
   position: absolute;
   bottom: 190px;
+  cursor: pointer;
 }
 
 .check > .input {
@@ -49,4 +50,27 @@
   height: 30px;
   line-height: 30px;
   margin-left: 10px;
+}
+
+.tag-game {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-negative);
+}
+
+.history-game {
+  width: 100%;
+  height: 170px;
+  position: absolute;
+  padding: 20px 0;
+  list-style: none;
+  bottom: 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.history-game .action {
+  display: inline-block;
+  margin: 10px 4px;
 }

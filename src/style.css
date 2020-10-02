@@ -1,3 +1,20 @@
 .wrap {
   position: absolute;
+  overflow-x: hidden;
+}
+
+.wrap > .footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  line-height: 20px;
+  background: var(--color-second);
+}
+
+.board .history-game {
+  display: none;
+}
+
+.board .history-game.-active {
+  display: block;
 }

@@ -3,7 +3,7 @@ import "./styles.css";
 
 const Sobre = ({ content = "Sobre", onClick }) => {
   return (
-    <a className="menu-sobre" href="#to-do" onClick={onClick}>
+    <a className="menu-sobre" href="#main" onClick={onClick}>
       {content}
     </a>
   );
