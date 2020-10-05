@@ -1,56 +1,32 @@
 import React from "react";
 import "./styles.css";
 import Cards from "../../objects/Cards";
-import Player from "../../objects/Players";
+
 import HistoryGame from "../../objects/HistoryGame";
 import ShowEvent from "../ShowEvent";
 
-const Board = ({
-  onClick,
-  className,
-  classHistoryGame,
-  onClickHistoryGame,
-}) => {
+const Board = ({ classNameHistoryGame, onClickHistoryGame }) => {
   return (
     <section className="board">
-      <div className="game-board">
-        <Cards onClick={onClick} className={className}>
-          <Player player="" />
-        </Cards>
-        <Cards onClick={onClick} className={className}>
-          <Player player="x" />
-        </Cards>
-        <Cards onClick={onClick} className={className}>
-          <Player player="x" />
-        </Cards>
+      <Cards />
+      <Cards />
+      <Cards />
 
-        <Cards onClick={onClick} className={className}>
-          <Player player="o" />
-        </Cards>
-        <Cards onClick={onClick} className={className}>
-          <Player player="x" />
-        </Cards>
-        <Cards onClick={onClick} className={className}>
-          <Player player="o" />
-        </Cards>
+      <Cards />
+      <Cards />
+      <Cards />
 
-        <Cards onClick={onClick} className={className}>
-          <Player player="x" />
-        </Cards>
-        <Cards onClick={onClick} className={className}>
-          <Player player="o" />
-        </Cards>
-        <Cards onClick={onClick} className={className}>
-          <Player player="" />
-        </Cards>
-      </div>
+      <Cards />
+      <Cards />
+      <Cards />
+
       <ShowEvent
-        onClick={onClickHistoryGame}
         id="show"
         type="checkbox"
         content="Mostrar Eventos"
+        onClickHistoryGame={onClickHistoryGame}
       />
-      <HistoryGame className={classHistoryGame} />
+      <HistoryGame className={classNameHistoryGame} />
     </section>
   );
 };

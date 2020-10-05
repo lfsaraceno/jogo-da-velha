@@ -9,18 +9,13 @@ import LogoPreto from "../src/img/logopreto.svg";
 
 function App() {
   const [activeSobre, setActiveSobre] = useState(" ");
-  const [activeCard, setActiveCard] = useState(" ");
   const [activeHistoryGame, setActiveHistoryGame] = useState(" ");
 
   const handleClickAdd = () => setActiveSobre("-active");
   const handleClickRemove = () => setActiveSobre("");
 
-  // const handleClickCardAdd = () => setActiveSobre("-active");
-  const handleClickCardRemove = () =>
-    setActiveCard(() => console.log("CLICK CARD"));
-
-  const handleClickHystoryGame = () => {
-    console.log("CLICK HANDLEHISTORY GAME");
+  const handleClickHistoryGame = () => {
+    console.log(`CLICK HANDLEHISTORY GAME antes:${activeHistoryGame}`);
     setActiveHistoryGame((old) => (old === " -active" ? "" : " -active"));
   };
 
@@ -29,10 +24,8 @@ function App() {
       <article className="wrap">
         <Header logo={LogoPreto} onClick={handleClickAdd} />
         <Board
-          className={activeCard}
-          classHistoryGame={activeHistoryGame}
-          onClickHistoryGame={handleClickHystoryGame}
-          onClick={handleClickCardRemove}
+          onClickHistoryGame={handleClickHistoryGame}
+          classNameHistoryGame={activeHistoryGame}
         />
         <Footer logo={LogoPreto} />
       </article>

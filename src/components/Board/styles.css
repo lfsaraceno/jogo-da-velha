@@ -1,39 +1,29 @@
 .board {
   max-width: 360px;
   height: 600px;
-  display: flex;
   position: relative;
-  justify-content: center;
-  margin: auto;
+  text-align: center;
+  padding-top: var(--size-extra-large);
   background-color: var(--color-second);
+  box-sizing: border-box;
 }
 
-.game-board {
-  width: 330px;
-  height: 335px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin: 30px 0;
+.board > .cards-game {
+  margin: 2px;
 }
 
-.game-board > .cards {
-  margin: 3px;
-}
-
-.game-board > .cards:nth-child(3),
-.game-board > .cards:nth-child(5),
-.game-board > .cards:nth-child(7) {
+.board > .cards-game:nth-child(3),
+.board > .cards-game:nth-child(5),
+.board > .cards-game:nth-child(7) {
   border: 3px solid var(--color-first);
 }
 
 .check {
-  width: 160px;
-  height: 30px;
-  display: inherit;
   position: absolute;
-  bottom: 190px;
   cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: var(--size-medium);
 }
 
 .check > .input {
@@ -46,9 +36,11 @@
   height: 22px;
 }
 
-.check > .label {
-  height: 30px;
-  line-height: 30px;
+.check .label {
+  all: unset;
+  display: inline-block;
+  position: relative;
+  bottom: 8px;
   margin-left: 10px;
 }
 
@@ -67,7 +59,6 @@
   list-style: none;
   bottom: 0px;
   box-sizing: border-box;
-  text-align: center;
 }
 
 .history-game .action {

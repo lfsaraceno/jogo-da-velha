@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import playerX from "../../img/player-x.svg";
+import playerO from "../../img/player-o.svg";
+import logoCollab from "../../img/logo-collab.svg";
 import "./styles.css";
 
-const Cards = ({ children, onClick, className }) => {
-  // let active = "";
-  console.log(`onclick: ${onClick}`);
-  console.log(`className: ${className}`);
-  // if (children.props.player === "x" || children.props.player === "o") {
-  //   active = " -active";
-  // }
+const Cards = () => {
+  const [statePlayer, setStatePlayer] = useState("");
+  const players = [];
+  players["x"] = playerX;
+  players["o"] = playerO;
+  players[""] = logoCollab;
+
+  const handleClickCard = () => setStatePlayer("x");
 
   return (
-    <button onClick={onClick} className={`cards${className}`}>
-      {children}
+    <button onClick={handleClickCard} className={`cards-game`}>
+      <img
+        className="player"
+        src={players[statePlayer]}
+        alt={`Jogador${statePlayer.toUpperCase()}`}
+      />
     </button>
   );
 };

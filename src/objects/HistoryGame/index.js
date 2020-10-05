@@ -1,7 +1,7 @@
 import React from "react";
 import TagGame from "../TagGame";
 
-const HistoryGame = ({ className }) => (
+const HistoryGame = ({className}) => (
   <ol className={`history-game${className}`}>
     <li className="action">
       <TagGame content="Adicionou: X" />

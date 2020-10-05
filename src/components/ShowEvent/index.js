@@ -3,12 +3,12 @@ import Labels from "../../objects/Labels";
 import Input from "../../objects/Input";
 import "./styles.css";
 
-const ShowEvent = ({ id, type, content, onClick }) => {
+const ShowEvent = ({ id, type, content, onClickHistoryGame }) => {
   return (
-    <section className="check" onClick={onClick}>
+    <form className="check" onClick={onClickHistoryGame}>
       <Input id={id} type={type} />
-      <Labels htmlFor={id} content={content} />
-    </section>
+      <Labels htmlFor={id} content={content} onClick={onClickHistoryGame} />
+    </form>
   );
 };
 export default ShowEvent;
